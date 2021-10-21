@@ -120,20 +120,19 @@ Training:
 Models:        
     CGCNN_demo:
         model: CGCNN
-        dim1: 100
-        dim2: 150
-        pre_fc_count: 1
-        gc_count: 4
-        post_fc_count: 3
-        pool: "global_mean_pool"
-        pool_order: "early"
+        dim1: 90
+        dim2: 170
+        dim3: 190
+        fc_count: 6
+        conv_count: 6
+        pool: "set2set"
         batch_norm: "True"
         batch_track_stats: "True"
         act: "relu"
         dropout_rate: 0.0
-        epochs: 250
-        lr: 0.002
-        batch_size: 100
+        epochs: 200
+        lr: 0.000248208
+        batch_size: 150
         optimizer: "AdamW"
         optimizer_args: {}
         scheduler: "ReduceLROnPlateau"
